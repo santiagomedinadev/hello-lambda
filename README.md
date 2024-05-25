@@ -15,4 +15,17 @@ This project is a basic java app that will run in AWS.
    3. In the `Runtime settings` section click on `Edit` button.
    4. Copy the path of our entry point application in the `Hendler` section, in our case this will be dev.santiagomedina.HelloLambda::handleRequest.
    5. Click on `Save` button.
-5. In this point we are ready to test our function. Go to `Test` tab and click on `Test` button.
+5. In this point we are ready to test our function. Go to `Test` tab and click on the `Test` button.
+
+## Hello-Lambda 2.0
+Modify the method `handleRequest` in the `HelloLambda` class to:
+```java
+    public class HelloLambda {
+        public String handleRequest(String name){
+            return "Hello, " + name + "!";
+        }
+    }
+```
+Follow the `Key Points` steps until the step (5), before to click on the `Test` button, scroll down in the `Event JSON` section, delete the default data and write a random `String`, scroll up and clikc on the `Test` button.
+
+Check the result. 😎
